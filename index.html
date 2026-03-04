@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My library</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Gowun Batang"', 'Georgia', 'serif'],
+                        sans: ['system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: '#fdfcf8',
+                        beige: '#f5f1e8',
+                        charcoal: '#4a4a4a',
+                        'dark-text': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    <</script>
 </head>
-<body>
-    
-</body>
-</html>
+
+<body class="container mx-auto px-4 bg-gray-200 text-gray-900 font-sans w-full">
+
+
+<nav class="bg-gray-100 border-b[1px] border-gray-200 ">
+    <ul class="flex space-x-10 px-8 py-4 text-green-700 font-medium">
+        <li><a href="#" class="hover:text-black transition">Home</a></li>
+        <li><a href="#" class="hover:text-black transition">Details</a></li>
+        <li><a href="#" class="hover:text-black transition">News</a></li>
+        <li><a href="#" class="hover:text-black transition">Contact</a></li>
+    </ul>
+</nav>
+
